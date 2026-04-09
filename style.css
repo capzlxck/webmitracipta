@@ -305,10 +305,10 @@
         /* Untuk layar sangat kecil (400px ke bawah) tetap besar namun proporsional */
         @media (max-width: 480px) {
             .slide {
-                min-height: 380px;
+                min-height: 550px;
             }
             .slide img {
-                height: 380px;
+                height: 550px;
             }
         }
         
