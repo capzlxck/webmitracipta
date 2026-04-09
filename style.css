@@ -294,10 +294,10 @@
             
             /* MOBILE: slideshow JAUH LEBIH BESAR - tinggi gambar 420px agar lebih proporsional dan besar */
             .slide {
-                min-height: 450px;
+                min-height: 550px;
             }
             .slide img {
-                height: 450px;
+                height: 550px;
                 object-fit: cover;
             }
         }
@@ -315,10 +315,10 @@
         /* Untuk hp dengan layar lebih tinggi, beri ukuran maksimal agar tetap enak dilihat */
         @media (max-width: 400px) {
             .slide {
-                min-height: 450px;
+                min-height: 500px;
             }
             .slide img {
-                height: 450px;
+                height: 500px;
             }
         }
         
