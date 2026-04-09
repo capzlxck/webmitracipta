@@ -1,5 +1,5 @@
-(function() {
-        // Slideshow otomatis + geser manual tanpa ketergantungan CDN apapun
+    (function() {
+        // Slideshow otomatis + geser manual (tanpa dependensi eksternal)
         const slidesContainer = document.getElementById('carouselSlides');
         const slides = Array.from(document.querySelectorAll('.slide'));
         const dotsContainer = document.getElementById('carouselDots');
@@ -10,7 +10,6 @@
         let scrollLeft = 0;
         let autoPlayEnabled = true;
 
-        // buat dot berdasarkan jumlah slide
         function createDots() {
             if (!dotsContainer) return;
             dotsContainer.innerHTML = '';
@@ -35,7 +34,6 @@
             });
         }
 
-        // scroll ke slide tertentu
         function goToSlide(index) {
             if (!slidesContainer) return;
             if (index < 0) index = 0;
@@ -51,7 +49,6 @@
             updateDots();
         }
 
-        // mendapatkan index berdasarkan scroll posisi
         function getCurrentIndexFromScroll() {
             if (!slidesContainer) return 0;
             const scrollPos = slidesContainer.scrollLeft;
@@ -78,7 +75,7 @@
                 let nextIndex = currentIndex + 1;
                 if (nextIndex >= slides.length) nextIndex = 0;
                 goToSlide(nextIndex);
-            }, 5000); // 5 detik
+            }, 5000);
         }
 
         function resetAutoPlay() {
@@ -88,7 +85,6 @@
             }
         }
 
-        // Drag dan touch untuk geser manual
         function initDragScroll() {
             if (!slidesContainer) return;
             slidesContainer.addEventListener('mousedown', (e) => {

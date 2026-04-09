@@ -16,7 +16,7 @@
 
         /* Container utama seperti card linktree */
         .link-card {
-            max-width: 560px;
+            max-width: 600px;
             width: 100%;
             margin: 0 auto;
             background: #ffffff;
@@ -33,66 +33,158 @@
         /* bagian header / profil */
         .profile-section {
             text-align: center;
-            padding: 2rem 1.5rem 1rem;
+            padding: 2rem 1.5rem 0.8rem;
             background: white;
         }
 
-        /* logo atau avatar brand - menggunakan emoji */
+        /* LOGO diperbesar */
         .brand-icon {
             background: #ffd966;
-            width: 80px;
-            height: 80px;
-            border-radius: 32px;
+            width: 110px;
+            height: 110px;
+            border-radius: 40px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 1rem;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            font-size: 3rem;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        
+        .brand-icon:hover {
+            transform: scale(1.02);
+        }
+        
+        .brand-logo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .brand-icon .logo-fallback {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #a5682c;
         }
 
         h1 {
-            font-size: 1.9rem;
+            font-size: 2rem;
             font-weight: 700;
             letter-spacing: -0.3px;
             background: linear-gradient(135deg, #c87e2f, #f5b042);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.5rem;
         }
 
-        .tagline {
-            font-size: 0.9rem;
-            color: #7c5e3a;
-            background: #fef1df;
-            display: inline-block;
-            padding: 0.3rem 1rem;
-            border-radius: 40px;
-            font-weight: 500;
-            margin-top: 6px;
+        /* Social media di bawah judul */
+        .social-under-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            padding: 0.8rem 1rem 0.5rem;
+            background: white;
+            border-bottom: 1px solid #fff0e0;
+        }
+        
+        .social-icon-inline {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+        
+        .social-img-icon-sm {
+            width: 42px;
+            height: 42px;
+            display: block;
+            transition: transform 0.2s;
+        }
+        
+        .social-icon-inline span {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #7a5a3a;
+            letter-spacing: 0.5px;
+        }
+        
+        .social-icon-inline:hover .social-img-icon-sm {
+            transform: translateY(-4px);
+        }
+        
+        .social-icon-inline:hover {
+            transform: scale(1.02);
         }
 
         /* deskripsi utama */
         .description {
-            padding: 1rem 1.5rem 0.8rem;
+            padding: 1rem 1.5rem 1rem;
             text-align: center;
             font-size: 1rem;
             color: #3d2a1a;
-            line-height: 1.45;
+            line-height: 1.5;
             font-weight: 500;
             background: white;
             border-bottom: 1px solid #fff0e0;
         }
 
         .description p {
-            max-width: 90%;
+            max-width: 95%;
             margin: 0 auto;
         }
 
-        /* SLIDESHOW CAROUSEL - bisa digeser & auto 5 detik */
+        /* TOMBOL WHATSAPP */
+        .buttons-wa {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            padding: 1rem 1.5rem 1rem;
+            background: white;
+        }
+
+        .wa-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: #25D366;
+            padding: 1rem;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: white;
+            transition: all 0.2s;
+            box-shadow: 0 5px 12px rgba(37, 211, 102, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .wa-icon {
+            font-size: 1.6rem;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .wa-btn:hover {
+            background: #20b859;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px rgba(37, 211, 102, 0.25);
+        }
+
+        .wa-btn:active {
+            transform: translateY(1px);
+        }
+
+        /* SLIDESHOW CAROUSEL - ukuran besar di desktop & mobile (diperbesar) */
         .carousel-container {
-            padding: 1rem 1rem 1.2rem;
+            padding: 0.5rem 1rem 1.5rem;
             background: #ffffff;
         }
 
@@ -100,7 +192,7 @@
             position: relative;
             border-radius: 32px;
             overflow: hidden;
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
             background: #faf3e8;
         }
 
@@ -136,12 +228,12 @@
             justify-content: center;
             align-items: center;
             background: #f7ede1;
-            min-height: 260px;
+            min-height: 700px;  /* ukuran dasar yang lebih besar */
         }
 
         .slide img {
             width: 100%;
-            height: 260px;
+            height: 700px;
             object-fit: cover;
             display: block;
             background: #e9dacb;
@@ -152,7 +244,7 @@
             display: flex;
             justify-content: center;
             gap: 12px;
-            margin-top: 16px;
+            margin-top: 18px;
         }
 
         .dot {
@@ -169,119 +261,73 @@
             background: #f5a623;
         }
 
-        /* tombol wa - menggunakan emoji dan teks, tanpa icon font */
-        .buttons-wa {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-            padding: 0.8rem 1.5rem 1.5rem;
-        }
-
-        .wa-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            background: #25D366;
-            padding: 1rem;
-            border-radius: 60px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: white;
-            transition: all 0.2s;
-            box-shadow: 0 5px 12px rgba(37, 211, 102, 0.3);
-            border: none;
-            cursor: pointer;
-        }
-
-        /* icon WhatsApp menggunakan emoji dan gambar inline small */
-        .wa-icon {
-            font-size: 1.6rem;
-            display: inline-block;
-        }
-
-        .wa-btn:hover {
-            background: #20b859;
-            transform: translateY(-3px);
-            box-shadow: 0 12px 20px rgba(37, 211, 102, 0.25);
-        }
-
-        .wa-btn:active {
-            transform: translateY(1px);
-        }
-
-        /* Footer dengan 2 icon (Shopee & Instagram) - pakai emoji & teks, tanpa font external */
-        .social-footer {
+        /* Footer credit */
+        .credit-footer {
             background: #fef6ed;
-            padding: 1.2rem 1rem 1.6rem;
+            padding: 1rem 1rem 1.2rem;
             text-align: center;
             border-top: 1px solid #ffe6ce;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .social-icon {
-            display: inline-flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            text-decoration: none;
-            transition: transform 0.2s;
-        }
-
-        /* ikon sosial menggunakan gambar SVG data URI (self-contained, tanpa CDN) */
-        .social-img-icon {
-            width: 48px;
-            height: 48px;
-            display: block;
-            transition: transform 0.2s;
-        }
-
-        .social-icon span {
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: #7a5a3a;
-            letter-spacing: 0.5px;
-        }
-
-        .social-icon:hover .social-img-icon {
-            transform: translateY(-4px);
-        }
-
-        .social-icon:hover {
-            transform: scale(1.02);
-        }
-
-        /* credit */
-        .credit {
             font-size: 0.7rem;
-            text-align: center;
-            background: #ffffff;
-            padding: 0.8rem 1rem 1rem;
             color: #b49063;
-            border-top: 1px solid #f9e5d1;
         }
-
-        /* responsif */
-        @media (max-width: 500px) {
+        
+        /* ========== RESPONSIF MOBILE - SLIDESHOW DIPERBESAR ========== */
+        @media (max-width: 600px) {
             body {
                 padding: 1rem;
             }
-            .slide img {
-                height: 220px;
-            }
             .wa-btn {
-                font-size: 1rem;
+                font-size: 0.95rem;
                 padding: 0.85rem;
             }
             h1 {
-                font-size: 1.6rem;
+                font-size: 1.7rem;
             }
-            .social-img-icon {
-                width: 40px;
-                height: 40px;
+            .brand-icon {
+                width: 90px;
+                height: 90px;
+            }
+            .social-img-icon-sm {
+                width: 38px;
+                height: 38px;
+            }
+            
+            /* MOBILE: slideshow JAUH LEBIH BESAR - tinggi gambar 420px agar lebih proporsional dan besar */
+            .slide {
+                min-height: 450px;
+            }
+            .slide img {
+                height: 450px;
+                object-fit: cover;
+            }
+        }
+        
+        /* Untuk layar sangat kecil (400px ke bawah) tetap besar namun proporsional */
+        @media (max-width: 480px) {
+            .slide {
+                min-height: 380px;
+            }
+            .slide img {
+                height: 380px;
+            }
+        }
+        
+        /* Untuk hp dengan layar lebih tinggi, beri ukuran maksimal agar tetap enak dilihat */
+        @media (max-width: 400px) {
+            .slide {
+                min-height: 450px;
+            }
+            .slide img {
+                height: 450px;
+            }
+        }
+        
+        /* Pastikan di tablet sekalipun tidak mengecil drastis */
+        @media (min-width: 601px) and (max-width: 900px) {
+            .slide {
+                min-height: 500px;
+            }
+            .slide img {
+                height: 500px;
             }
         }
