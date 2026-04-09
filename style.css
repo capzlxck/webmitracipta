@@ -315,19 +315,19 @@
         /* Untuk hp dengan layar lebih tinggi, beri ukuran maksimal agar tetap enak dilihat */
         @media (max-width: 400px) {
             .slide {
-                min-height: 500px;
+                min-height: 550px;
             }
             .slide img {
-                height: 500px;
+                height: 550px;
             }
         }
         
         /* Pastikan di tablet sekalipun tidak mengecil drastis */
         @media (min-width: 601px) and (max-width: 900px) {
             .slide {
-                min-height: 500px;
+                min-height: 550px;
             }
             .slide img {
-                height: 500px;
+                height: 550px;
             }
         }
