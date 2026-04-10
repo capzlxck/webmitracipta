@@ -7,53 +7,43 @@
         body {
             background: linear-gradient(145deg, #fef9e6 0%, #fff4e0 100%);
             font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            padding: 2rem 1.2rem 3rem;
+            padding: 1.5rem;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        /* Container utama seperti card linktree */
+        /* Container utama seperti card */
         .link-card {
-            max-width: 600px;
+            max-width: 580px;
             width: 100%;
             margin: 0 auto;
             background: #ffffff;
-            border-radius: 48px 48px 40px 40px;
-            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 40px;
+            box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
             overflow: hidden;
-            transition: transform 0.2s ease;
         }
 
-        .link-card:hover {
-            transform: scale(1.01);
-        }
-
-        /* bagian header / profil */
+        /* bagian header */
         .profile-section {
             text-align: center;
-            padding: 2rem 1.5rem 0.8rem;
+            padding: 2rem 1.5rem 1rem;
             background: white;
         }
 
-        /* LOGO diperbesar */
+        /* LOGO */
         .brand-icon {
             background: #ffd966;
-            width: 110px;
-            height: 110px;
-            border-radius: 40px;
+            width: 100px;
+            height: 100px;
+            border-radius: 35px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 1rem;
-            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             overflow: hidden;
-            transition: transform 0.2s;
-        }
-        
-        .brand-icon:hover {
-            transform: scale(1.02);
         }
         
         .brand-logo {
@@ -64,20 +54,17 @@
         }
         
         .brand-icon .logo-fallback {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: bold;
             color: #a5682c;
         }
 
         h1 {
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: 700;
+            color: #25D366;
+            margin-bottom: 0.25rem;
             letter-spacing: -0.3px;
-            background: linear-gradient(135deg, #c87e2f, #f5b042);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            margin-bottom: 0.5rem;
         }
 
         /* Social media di bawah judul */
@@ -86,114 +73,95 @@
             justify-content: center;
             align-items: center;
             gap: 2rem;
-            padding: 0.8rem 1rem 0.5rem;
+            padding: 0.5rem 1rem 0.8rem;
             background: white;
-            border-bottom: 1px solid #fff0e0;
+            border-bottom: 1px solid #f0e4d4;
         }
         
         .social-icon-inline {
             display: inline-flex;
             flex-direction: column;
             align-items: center;
-            gap: 6px;
+            gap: 5px;
             text-decoration: none;
             transition: transform 0.2s;
         }
         
         .social-img-icon-sm {
-            width: 42px;
-            height: 42px;
+            width: 44px;
+            height: 44px;
             display: block;
-            transition: transform 0.2s;
         }
         
         .social-icon-inline span {
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             font-weight: 600;
             color: #7a5a3a;
-            letter-spacing: 0.5px;
-        }
-        
-        .social-icon-inline:hover .social-img-icon-sm {
-            transform: translateY(-4px);
         }
         
         .social-icon-inline:hover {
-            transform: scale(1.02);
+            transform: translateY(-3px);
         }
 
         /* deskripsi utama */
         .description {
-            padding: 1rem 1.5rem 1rem;
+            padding: 1.2rem 1.5rem;
             text-align: center;
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: #3d2a1a;
             line-height: 1.5;
-            font-weight: 500;
             background: white;
-            border-bottom: 1px solid #fff0e0;
-        }
-
-        .description p {
-            max-width: 95%;
-            margin: 0 auto;
+            border-bottom: 1px solid #f0e4d4;
         }
 
         /* TOMBOL WHATSAPP */
         .buttons-wa {
             display: flex;
             flex-direction: column;
-            gap: 14px;
-            padding: 1rem 1.5rem 1rem;
+            gap: 12px;
+            padding: 1rem 1.5rem;
             background: white;
+            border-bottom: 1px solid #f0e4d4;
         }
 
         .wa-btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 10px;
             background: #25D366;
-            padding: 1rem;
-            border-radius: 60px;
+            padding: 0.9rem;
+            border-radius: 50px;
             text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
+            font-weight: 600;
+            font-size: 0.95rem;
             color: white;
             transition: all 0.2s;
-            box-shadow: 0 5px 12px rgba(37, 211, 102, 0.3);
-            border: none;
-            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.25);
         }
 
         .wa-icon {
-            font-size: 1.6rem;
-            display: inline-flex;
-            align-items: center;
+            font-size: 1.3rem;
         }
 
         .wa-btn:hover {
             background: #20b859;
-            transform: translateY(-3px);
-            box-shadow: 0 12px 20px rgba(37, 211, 102, 0.25);
+            transform: translateY(-2px);
         }
 
-        .wa-btn:active {
-            transform: translateY(1px);
-        }
-
-        /* SLIDESHOW CAROUSEL - ukuran besar di desktop & mobile (diperbesar) */
+        /* SLIDESHOW CAROUSEL - RATIO GAMBAR 1104x583 (landscape) */
+        /* Rasio = height/width = 583/1104 ≈ 0.528, jadi aspect-ratio: 1104 / 583 ≈ 1.893 */
         .carousel-container {
-            padding: 0.5rem 1rem 1.5rem;
+            padding: 1rem 1rem 1.2rem;
             background: #ffffff;
         }
 
         .carousel-wrapper {
             position: relative;
-            border-radius: 32px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-            background: #faf3e8;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+            background: #f5ede1;
         }
 
         .carousel-slides {
@@ -204,15 +172,18 @@
             -webkit-overflow-scrolling: touch;
             scrollbar-width: thin;
             cursor: grab;
-            scrollbar-color: #f5b042 #ffe3c2;
+        }
+
+        .carousel-slides:active {
+            cursor: grabbing;
         }
 
         .carousel-slides::-webkit-scrollbar {
-            height: 6px;
+            height: 4px;
         }
 
         .carousel-slides::-webkit-scrollbar-track {
-            background: #ffe3c2;
+            background: #e8dccc;
             border-radius: 10px;
         }
 
@@ -227,24 +198,26 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #f7ede1;
-            min-height: 700px;  /* ukuran dasar yang lebih besar */
+            background: #f5ede1;
         }
 
+        /* PERBAIKAN UTAMA: rasio gambar sesuai 1104x583 (landscape) */
+        /* Menggunakan aspect-ratio: 1104 / 583 ≈ 1.893 */
         .slide img {
             width: 100%;
-            height: 700px;
+            height: auto;
+            aspect-ratio: 1104 / 583;
             object-fit: cover;
             display: block;
-            background: #e9dacb;
+            background: #f0e4d4;
         }
 
         /* navigasi dot */
         .carousel-dots {
             display: flex;
             justify-content: center;
-            gap: 12px;
-            margin-top: 18px;
+            gap: 10px;
+            margin-top: 16px;
         }
 
         .dot {
@@ -257,77 +230,269 @@
         }
 
         .dot.active {
-            width: 28px;
-            background: #f5a623;
+            width: 24px;
+            background: #25D366;
+        }
+
+        /* Layanan & Jasa Section */
+        .services-section {
+            padding: 1.2rem 1.5rem 1.5rem;
+            background: #fefbf5;
+            border-top: 1px solid #f0e4d4;
+            text-align: center;
+        }
+
+        .services-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #c87e2f;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.7rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-item {
+            background: #ffd966;
+            padding: 0.5rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #5a3a1a;
+        }
+
+        .highlight-service {
+            background: #25D366;
+            color: white;
+            padding: 0.7rem 1rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+            display: inline-block;
+        }
+
+        .tagline-text {
+            font-size: 0.8rem;
+            color: #a5682c;
+            font-style: italic;
+            margin-top: 0.5rem;
         }
 
         /* Footer credit */
         .credit-footer {
             background: #fef6ed;
-            padding: 1rem 1rem 1.2rem;
+            padding: 0.8rem 1rem;
             text-align: center;
-            border-top: 1px solid #ffe6ce;
-            font-size: 0.7rem;
+            border-top: 1px solid #f0e4d4;
+            font-size: 0.65rem;
             color: #b49063;
         }
         
-        /* ========== RESPONSIF MOBILE - SLIDESHOW DIPERBESAR ========== */
-        @media (max-width: 600px) {
+        /* ========== RESPONSIF UNTUK SEMUA PERANGKAT ========== */
+        /* Desktop (default sudah) */
+        
+        /* Tablet (max-width: 768px) */
+        @media (max-width: 768px) {
             body {
                 padding: 1rem;
             }
-            .wa-btn {
-                font-size: 0.95rem;
-                padding: 0.85rem;
+            
+            .link-card {
+                max-width: 95%;
+                border-radius: 32px;
             }
-            h1 {
-                font-size: 1.7rem;
+            
+            .profile-section {
+                padding: 1.5rem 1rem 0.8rem;
             }
+            
             .brand-icon {
-                width: 90px;
-                height: 90px;
+                width: 85px;
+                height: 85px;
             }
+            
+            h1 {
+                font-size: 1.4rem;
+            }
+            
             .social-img-icon-sm {
                 width: 38px;
                 height: 38px;
             }
             
-            /* MOBILE: slideshow JAUH LEBIH BESAR - tinggi gambar 420px agar lebih proporsional dan besar */
-            .slide {
-                min-height: 550px;
+            .description {
+                padding: 1rem;
+                font-size: 0.85rem;
             }
+            
+            .buttons-wa {
+                padding: 0.8rem 1rem;
+            }
+            
+            .wa-btn {
+                padding: 0.8rem;
+                font-size: 0.9rem;
+            }
+            
+            .carousel-container {
+                padding: 0.8rem 0.8rem 1rem;
+            }
+            
+            /* Tablet: slideshow tetap menggunakan rasio 1104/583 */
             .slide img {
-                height: 550px;
-                object-fit: cover;
+                aspect-ratio: 1104 / 583;
+            }
+            
+            .services-section {
+                padding: 1rem;
+            }
+            
+            .service-item {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.8rem;
             }
         }
         
-        /* Untuk layar sangat kecil (400px ke bawah) tetap besar namun proporsional */
+        /* Mobile (max-width: 480px) */
         @media (max-width: 480px) {
-            .slide {
-                min-height: 550px;
+            body {
+                padding: 0.8rem;
             }
+            
+            .link-card {
+                border-radius: 28px;
+            }
+            
+            .profile-section {
+                padding: 1.2rem 1rem 0.6rem;
+            }
+            
+            .brand-icon {
+                width: 70px;
+                height: 70px;
+                border-radius: 28px;
+            }
+            
+            h1 {
+                font-size: 1.2rem;
+            }
+            
+            .social-under-title {
+                gap: 1.5rem;
+                padding: 0.3rem 1rem 0.6rem;
+            }
+            
+            .social-img-icon-sm {
+                width: 32px;
+                height: 32px;
+            }
+            
+            .social-icon-inline span {
+                font-size: 0.65rem;
+            }
+            
+            .description {
+                padding: 0.8rem;
+                font-size: 0.8rem;
+            }
+            
+            .buttons-wa {
+                padding: 0.6rem 0.8rem;
+                gap: 10px;
+            }
+            
+            .wa-btn {
+                padding: 0.7rem;
+                font-size: 0.85rem;
+            }
+            
+            .wa-icon {
+                font-size: 1.2rem;
+            }
+            
+            .carousel-container {
+                padding: 0.6rem 0.6rem 0.8rem;
+            }
+            
+            /* Mobile: slideshow tetap mempertahankan rasio asli 1104x583 */
             .slide img {
-                height: 550px;
+                aspect-ratio: 1104 / 583;
+            }
+            
+            .carousel-dots {
+                margin-top: 12px;
+                gap: 8px;
+            }
+            
+            .dot {
+                width: 6px;
+                height: 6px;
+            }
+            
+            .dot.active {
+                width: 20px;
+            }
+            
+            .services-section {
+                padding: 0.8rem;
+            }
+            
+            .services-title {
+                font-size: 0.85rem;
+            }
+            
+            .service-item {
+                font-size: 0.7rem;
+                padding: 0.35rem 0.7rem;
+            }
+            
+            .highlight-service {
+                font-size: 0.8rem;
+                padding: 0.5rem 0.8rem;
+            }
+            
+            .tagline-text {
+                font-size: 0.7rem;
+            }
+            
+            .credit-footer {
+                font-size: 0.6rem;
+                padding: 0.6rem;
             }
         }
         
-        /* Untuk hp dengan layar lebih tinggi, beri ukuran maksimal agar tetap enak dilihat */
-        @media (max-width: 400px) {
-            .slide {
-                min-height: 550px;
+        /* Mobile kecil (max-width: 360px) */
+        @media (max-width: 360px) {
+            .services-list {
+                gap: 0.5rem;
             }
+            
+            .service-item {
+                font-size: 0.65rem;
+                padding: 0.3rem 0.6rem;
+            }
+            
             .slide img {
-                height: 550px;
+                aspect-ratio: 1104 / 583;
             }
         }
         
-        /* Pastikan di tablet sekalipun tidak mengecil drastis */
-        @media (min-width: 601px) and (max-width: 900px) {
-            .slide {
-                min-height: 550px;
+        /* Untuk memastikan di landscape mobile tetap baik */
+        @media (max-height: 500px) and (orientation: landscape) {
+            body {
+                padding: 0.5rem;
             }
+            
             .slide img {
-                height: 550px;
+                aspect-ratio: 1104 / 583;
+                max-height: 50vh;
             }
         }
